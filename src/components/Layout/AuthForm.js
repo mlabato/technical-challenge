@@ -166,7 +166,13 @@ const AuthForm = () => {
         >
           Forgot Password?
         </div>
-        <button className="bg-[#4AC4BF] text-[20px] before:md:text-2xl text-white hover:text-[#897D70] p-4 rounded-xl my-12 cursor-pointer">
+        <button
+          className="bg-[#4AC4BF] text-[20px] before:md:text-2xl text-white hover:text-[#897D70] p-4 rounded-xl my-12 cursor-pointer"
+          onClick={() => {
+            emailValidatingHandler();
+            passwordValidatingHandler();
+          }}
+        >
           {" "}
           Sign in
         </button>
